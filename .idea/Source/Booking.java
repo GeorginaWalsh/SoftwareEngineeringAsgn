@@ -11,45 +11,29 @@ public class Booking {
         this.group = group;
     }
 
-    public String getName() {
-        return name;
-    }
+    //Getters
 
-    public String getDate() {
-        return date;
-    }
+    public String getName() {return name;}
 
-    public String getTime() {
-        return time;
-    }
+    public String getDate() {return date;}
 
-    public String getLocation() {
-        return location;
-    }
+    public String getTime() {return time;}
 
-    public int getGroup() {
-        return group;
-    }
+    public String getLocation() {return location;}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    public int getGroup() {return group;}
 
-    public void setDate(String date) {
-        this.date = date;
-    }
+    ///Setters
 
-    public void setTime(String time) {
-        this.time = time;
-    }
+    public void setName(String name) {this.name = name;}
 
-    public void setLocation(String location) {
-        this.location = location;
-    }
+    public void setDate(String date) {this.date = date;}
 
-    public void setGroup(int group) {
-        this.group = group;
-    }
+    public void setTime(String time) {this.time = time;}
+
+    public void setLocation(String location) {this.location = location;}
+
+    public void setGroup(int group) {this.group = group;}
 
 
 }

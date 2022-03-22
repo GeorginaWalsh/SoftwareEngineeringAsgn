@@ -5,26 +5,28 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class bookingTest {
 
+    private booking booking1, booking2;
+
         /**
          * Method to set up data for testing.
          */
         @BeforeEach
         void setUp() {
-            centre1 = new VacCentre("WIT Arena", "Carriganore, Waterford", "X91XD96", "240");
-            centre2 = new VacCentre("The Hub Kilkenny", "Cillín Hill, Kilkenny", "R95A4VP", "120");
-            booking1 = new Booking("name", "12:00", "lib", false);
+            booking1 = new booking("ry100", "Nov 12", "12:00", "Library", 5);
+            booking2 = new booking("lelio0", "Jan 26", "13:45", "CMLC", 1);
         }
 
         /**
-         * Test method for Centre constructor
+         * Test method for Booking constructor
          */
         @Test
         public void testConstructor() {
 
-            assertEquals("WIT Arena", centre1.getName());
-            assertEquals("Carriganore, Waterford", centre1.getAddress());
-            assertEquals("X91XD96", centre1.getEircode());
-            assertEquals("240", centre1.getCar());
+            assertEquals("ry100",  booking1.getName());
+            assertEquals("Nov 12", booking1.getDate());
+            assertEquals("12:00", booking1.getTime());
+            assertEquals("Library", booking1.getLocation());
+            assertEquals(5, booking1.getGroup());
 
         }
 
@@ -34,24 +36,27 @@ public class bookingTest {
 
         @Test
         public void getName(){
-            assertEquals("The Hub Kilkenny", centre2.getName());
+            assertEquals("lelio0", booking2.getName());
         }
 
         @Test
-        public void getAddress(){
-            assertEquals("Cillín Hill, Kilkenny", centre2.getAddress());
+        public void getDate(){
+            assertEquals("Jan 26", booking2.getDate());
         }
 
         @Test
-        public void getEircode(){
-            assertEquals("R95A4VP", centre2.getEircode());
+        public void getTime(){
+            assertEquals("13:45", booking2.getTime());
         }
 
         @Test
-        public void getCar(){
-            assertEquals("120", centre2.getCar());
+        public void getLocation(){
+            assertEquals("CMLC", booking2.getLocation());
         }
 
-    }
-
+        @Test
+        public void getGroup(){
+            assertEquals(1, booking2.getGroup());
+        }
 }
+

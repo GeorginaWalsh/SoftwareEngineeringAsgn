@@ -4,11 +4,11 @@ public class Booking {
     private int group;
 
     public Booking(String name, String date, String time, String location, int group) {
-        name = this.name;
-        date = this.date;
-        time = this.time;
-        location = this.location;
-        group = this.group;
+        this.name = name;
+        this.date = date;
+        this.time = time;
+        this.location = location;
+        this.group = group;
     }
 
     public String getName() {

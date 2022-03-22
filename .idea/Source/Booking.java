@@ -50,4 +50,6 @@ public class Booking {
     public void setGroup(int group) {
         this.group = group;
     }
+
+
 }

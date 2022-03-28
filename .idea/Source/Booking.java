@@ -1,6 +1,9 @@
 public class Booking {
 
-    private String name, date, time, location;
+    private String name;
+    private String date;
+    private String time;
+    private String location;
     private int group;
 
     public Booking(String name, String date, String time, String location, int group) {
@@ -9,6 +12,8 @@ public class Booking {
         this.time = time;
         this.location = location;
         this.group = group;
+
+
     }
 
     //Getters

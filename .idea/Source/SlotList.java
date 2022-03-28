@@ -10,13 +10,13 @@ public class SlotList {
 
     public boolean addBooking(Booking booking) {
         for(Booking existing : bookings) {
-            if(existing.getDate()==booking.getDate()) {
+            if(existing.getDate() == booking.getDate()) {
                 System.out.println("Timeslot for this room is already taken");
                 return false;
             }
         }
 
-        bookings.add(booking);
+        this.bookings.add(booking);
         System.out.println("Timeslot booked");
         return true;
     }

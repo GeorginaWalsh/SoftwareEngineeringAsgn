@@ -41,4 +41,10 @@ public class Booking {
     public void setGroup(int group) {this.group = group;}
 
 
+    //equals
+    public boolean matchingTimeslot(Booking otherBooking) {
+        return (this.date.equals(otherBooking.getDate()) &&
+                this.time.equals(otherBooking.getTime()) &&
+                this.location.equals(otherBooking.getLocation()));
+    }
 }

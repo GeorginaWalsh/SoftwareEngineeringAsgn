@@ -10,5 +10,7 @@ public class App {
     public void addToList(){
         Booking asd = new Booking("a", "b", "c", "d", 1);
 
+        SlotList list = new SlotList();
+
     }
 }

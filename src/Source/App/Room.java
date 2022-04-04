@@ -1,3 +1,5 @@
+package App;
+
 public class Room {
 
     private String id;
